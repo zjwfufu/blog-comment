@@ -5,4 +5,7 @@
   directory = "netlify/functions/"
   node_bundler = "esbuild"
   external_node_modules = ["@waline/vercel"]
-  included_files = ["node_modules/@waline/vercel/**"]
+  included_files = [
+    "node_modules/**",
+    "!node_modules/**/*.map"
+  ]
